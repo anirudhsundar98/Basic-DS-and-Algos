@@ -3,7 +3,7 @@ package Arrays;
 import java.util.ArrayList;
 import java.util.HashSet;
 
-public class EqualSumPartitions {
+public class EqualSumPartitions2 {
 
     static HashSet<Integer> set = new HashSet<>();
 

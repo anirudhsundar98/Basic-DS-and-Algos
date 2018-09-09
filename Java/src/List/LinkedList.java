@@ -29,8 +29,9 @@ public class LinkedList {
     public void displayList() {
         Node temp = this.head;
         while (temp != null) {
-            System.out.println(temp.data);
+            System.out.print(temp.data+" ");
             temp = temp.next;
         }
+        System.out.println();
     }
 }

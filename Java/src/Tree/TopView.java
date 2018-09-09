@@ -11,8 +11,8 @@ public class TopView {
         if (node == null)
             return;
 
-        if (map.get(dist)== null || map.get(dist).depth > node.depth)
-            map.put(dist, node);
+//        if (map.get(dist)== null || map.get(dist).depth > node.depth)
+            map.putIfAbsent(dist, node);
         topView(node.left, dist-1);
         topView(node.right, dist+1);
     }
